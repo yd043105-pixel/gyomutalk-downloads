@@ -1,0 +1,8 @@
+{
+  "name": "gyomutalk-downloads",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/releases.test.mjs"
+  }
+}
