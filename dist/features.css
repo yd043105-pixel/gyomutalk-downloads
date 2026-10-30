@@ -35,7 +35,7 @@
 .shot-pair{display:grid;gap:22px;min-width:0}
 .spot-head{max-width:720px;margin-bottom:40px}
 .school-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.app-spot .school-cards{grid-template-columns:repeat(4,1fr)}
+.app-spot .school-cards{grid-template-columns:repeat(5,1fr)}
 .school-cards article{border:1px solid var(--line);border-radius:14px;padding:24px;background:white}
 .school-cards h3{font-size:17px;margin:0 0 8px}
 .school-cards p{font-size:14px;color:var(--muted);margin:0;line-height:1.75}
