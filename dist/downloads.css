@@ -25,3 +25,13 @@
 @media(max-width:760px){.download-first{padding-top:28px;padding-bottom:30px}.hero-download-copy .eyebrow{font-size:12px}.hero-download-copy .lead{font-size:14px}}
 .eyebrow{font-size:13px}.hero-download-copy .actions .text-link{font-size:13px}.hero-notes{font-size:12px}
 @media(max-width:760px){.hero-download-copy .actions .text-link{font-size:13px}.hero-notes{font-size:12px}}
+
+/* PC-only download entry, retaining the three desktop choices. */
+.download-panel .product-downloads{grid-template-columns:minmax(0,1fr)}
+.download-panel .product-download.pc{display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:16px;padding:24px}
+.product-download.pc .app-icon{grid-column:1;grid-row:1/5;align-self:center}
+.product-download.pc>:not(.app-icon){grid-column:2}
+.product-download.pc .product-category{margin-top:0}
+.product-download.pc .product-platforms{min-height:0;margin-top:4px}
+.product-download.pc .product-availability{min-height:0;margin:10px 0 16px}
+.product-download.pc .button{grid-column:1/-1;min-height:46px;font-size:13px}
