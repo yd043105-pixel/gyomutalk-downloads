@@ -60,7 +60,8 @@ h1 em{font-style:normal;color:var(--blue)}
 .badge{font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}
 .badge.blue{background:var(--pale);color:var(--blue)}
 .badge.warn{background:var(--warn-tint);color:var(--warn)}
-.download-card h3{font-size:22px;letter-spacing:-.03em;margin-bottom:6px}
+.download-card h3{font-size:22px;letter-spacing:-.03em;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.card-mark{width:36px;height:36px;flex:none}
 .download-card>p{font-size:14px;color:var(--muted);margin-bottom:18px}
 .spec{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:auto}
 .release-status{font-size:13px;color:var(--muted);margin:6px 0 16px;min-height:22px}
