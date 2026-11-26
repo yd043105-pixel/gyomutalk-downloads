@@ -30,7 +30,7 @@
 
 ## 내용과 검사
 
-스크린샷(`dist/assets/shots`)은 가상 학교·가상 계정으로 실제 프로그램을 실행해 찍은 화면입니다. 대부분은 서버 저장소의 검증 실행(`tests/smoke.mjs --ui`, `window-order.mjs`, `server-manager.mjs`)에 `SCHOOL_UI_SCALE=2`를 주어 2배 해상도로 남긴 것을 절반 크기로 표시합니다. 조직도·할 일 추천·수업 교체·학사일정(`organization`, `tasks`, `swap`, `calendar`)은 서버 저장소의 화면 순회 검사(`tests/screen-tour.mjs`, 가상 학교: 교사 16명·조직도 폴더·학급 18개·묶음수업 3개)에 `SCHOOL_UI_SCALE=2`를 주어 찍었고, 관리자(`admin`)는 기능 설정 화면입니다. 이미지 주소의 `?v=`를 바꾸면 브라우저가 새 사진을 받습니다. 원격 지원처럼 캡처하는 PC의 실제 화면이 찍히는 장면은 넣지 않습니다. `dist/assets/manuals`의 PDF는 각 제품 저장소 `docs/public`의 공개 설명서에서 만든 것으로, 학교의 실제 운영 정보나 학생 자료를 포함하지 않습니다.
+스크린샷(`dist/assets/shots`)은 가상 학교·가상 계정으로 실제 프로그램을 실행해 찍은 화면입니다. 대부분은 서버 저장소의 검증 실행(`tests/smoke.mjs --ui`, `window-order.mjs`, `server-manager.mjs`)에 `SCHOOL_UI_SCALE=2`를 주어 2배 해상도로 남긴 것을 절반 크기로 표시합니다. 조직도·할 일 추천·수업 교체·학사일정(`organization`, `tasks`, `swap`, `calendar`)은 서버 저장소의 화면 순회 검사(`tests/screen-tour.mjs`, 가상 학교: 교사 16명·조직도 폴더·학급 18개·묶음수업 3개)에 `SCHOOL_UI_SCALE=2`를 주어 찍었고, 관리자(`admin`)는 기능 설정 화면입니다. 이미지 주소의 `?v=`를 바꾸면 브라우저가 새 사진을 받습니다. 원격 지원처럼 캡처하는 PC의 실제 화면이 찍히는 장면은 넣지 않습니다. `dist/assets/manuals`의 PDF는 각 제품 저장소 `docs/public`의 공개 설명서에서 만든 것으로, 학교의 실제 운영 정보나 학생 자료를 포함하지 않습니다. 설명서를 고치면 `python scripts/build-manuals.py`(옆 폴더의 `gyomutalk-server`를 읽음, `pip install reportlab pypdf` 필요)로 두 PDF를 다시 만듭니다.
 
 ```bash
 npm test
